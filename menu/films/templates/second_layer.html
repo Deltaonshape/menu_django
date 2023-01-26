@@ -1,0 +1,29 @@
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Меню фильмов</title>
+	<style>
+	body {background-color: #E0FFFF;
+			text-align: center;}
+	ul {list-style-type: none;
+		font-size: 150%;}
+	H2 {color: #000080;}
+	button {background-color: #B0C4DE;}
+  </style>
+</head>
+
+<body>
+	<h2>{{lay}}</h2>
+	<ul>
+		{% for key, value in one.items %} 
+            <li><a href={{value}}>{{key}}</a></li>
+        {% endfor %}
+    </ul>
+	
+   
+</body>
+
+
+</html>

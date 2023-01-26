@@ -1,0 +1,32 @@
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Главное меню</title>
+	
+	<style>
+	body {background-color: #E0FFFF;
+			text-align: center;}
+	ul {list-style-type: none;
+		font-size: 150%;}
+	H2 {color: #000080;}
+  </style>
+  
+</head>
+
+<h2> Выбери, что посмотреть вечером</h2>
+
+<body>
+	<ul>
+		{% for key, value in one.items %} 
+            <li><a href={{value}}>{{key}}</a></li>
+        {% endfor %}
+    </ul>
+    
+ 
+	
+</body>
+
+
+</html>

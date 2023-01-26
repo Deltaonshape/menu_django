@@ -1,0 +1,50 @@
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Меню фильмов</title>
+	<style>
+	body {background-color: #E0FFFF;
+			text-align: center;}
+	H2 {color: #000080;}
+	button {background-color: #B0C4DE;}
+	
+	table {border-collapse: separate;
+	   border-spacing: 60px 20px;
+	   margin: auto;
+	}
+	td {
+    text-align: center; 
+   }
+  </style>
+</head>
+
+<body>
+	<h2>{{lay}}</h2>
+	
+	<table>
+	  <tr>
+		  {% for i in one %} 
+            <td>
+            <b>Название:</b> {{i.title}}
+			<br>
+			<b>Режиссёр:</b> {{i.director}}
+			<br>
+			<b>Жанр:</b> {{i.genre}}
+			<br>
+			<b>Год:</b> {{i.year}}
+			<br>
+			</td>
+        {% endfor %}
+		
+	  </tr>
+	</table>
+	
+	
+	<h2>Приятного просмотра!</h2>
+	
+</body>
+
+
+</html>
